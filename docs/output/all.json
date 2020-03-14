@@ -78279,10 +78279,450 @@
         "neoClassName": "Docs.app.view.TutorialsTreeList"
     },
     {
+        "comment": "/**\n * @class CovidHelix.model.Country\n * @extends Neo.data.Model\n */",
+        "meta": {
+            "filename": "Country.mjs",
+            "lineno": 3,
+            "columnno": 0,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/model",
+            "code": {}
+        },
+        "kind": "class",
+        "name": "Country",
+        "augments": [
+            "Neo.data.Model"
+        ],
+        "memberof": "CovidHelix.model",
+        "longname": "CovidHelix.model.Country",
+        "scope": "static",
+        "$longname": "CovidHelix.model.Country",
+        "$kind": "class",
+        "id": 2131,
+        "neoClassName": "CovidHelix.model.Country"
+    },
+    {
+        "comment": "/**\n * @class CovidHelix.store.Countries\n * @extends Neo.data.Store\n */",
+        "meta": {
+            "filename": "Countries.mjs",
+            "lineno": 4,
+            "columnno": 0,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/store",
+            "code": {}
+        },
+        "kind": "class",
+        "name": "Countries",
+        "augments": [
+            "Neo.data.Store"
+        ],
+        "memberof": "CovidHelix.store",
+        "longname": "CovidHelix.store.Countries",
+        "scope": "static",
+        "$longname": "CovidHelix.store.Countries",
+        "$kind": "class",
+        "id": 2132,
+        "neoClassName": "CovidHelix.store.Countries"
+    },
+    {
+        "comment": "/**\n * @class CovidHelix.view.CountryHelix\n * @extends Neo.component.Helix\n */",
+        "meta": {
+            "filename": "CountryHelix.mjs",
+            "lineno": 4,
+            "columnno": 0,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {}
+        },
+        "kind": "class",
+        "name": "CountryHelix",
+        "augments": [
+            "Neo.component.Helix"
+        ],
+        "memberof": "CovidHelix.view",
+        "longname": "CovidHelix.view.CountryHelix",
+        "scope": "static",
+        "$longname": "CovidHelix.view.CountryHelix",
+        "$kind": "class",
+        "id": 2133,
+        "neoClassName": "CovidHelix.view.CountryHelix"
+    },
+    {
+        "comment": "/**\n         * A regex to replace blank chars\n         * @member {RegExp} flagRegEx=/ /gi\n         * @private\n         * @static\n         */",
+        "meta": {
+            "filename": "CountryHelix.mjs",
+            "lineno": 16,
+            "columnno": 8,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {}
+        },
+        "description": "A regex to replace blank chars",
+        "kind": "member",
+        "name": "flagRegEx",
+        "type": {
+            "names": [
+                "RegExp"
+            ]
+        },
+        "defaultvalue": "/",
+        "access": "private",
+        "scope": "static",
+        "longname": "flagRegEx",
+        "$longname": "flagRegEx",
+        "$kind": "property",
+        "id": 2134,
+        "neoClassName": "CovidHelix.view.CountryHelix"
+    },
+    {
+        "comment": "/**\n         * @member {String} className='CovidHelix.view.CountryHelix'\n         * @private\n         */",
+        "meta": {
+            "filename": "CountryHelix.mjs",
+            "lineno": 24,
+            "columnno": 8,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {}
+        },
+        "kind": "member",
+        "name": "className",
+        "type": {
+            "names": [
+                "String"
+            ]
+        },
+        "defaultvalue": "'CovidHelix.view.CountryHelix'",
+        "access": "private",
+        "longname": "className",
+        "scope": "global",
+        "$longname": "className",
+        "$kind": "property",
+        "id": 2135,
+        "neoClassName": "CovidHelix.view.CountryHelix"
+    },
+    {
+        "comment": "/**\n         * @member {String[]} cls=['neo-country-helix', 'neo-helix']\n         */",
+        "meta": {
+            "filename": "CountryHelix.mjs",
+            "lineno": 28,
+            "columnno": 8,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {}
+        },
+        "kind": "member",
+        "name": "cls",
+        "type": {
+            "names": [
+                "Array.<String>"
+            ]
+        },
+        "defaultvalue": "['neo-country-helix', 'neo-helix']",
+        "description": "'neo-helix']",
+        "longname": "cls",
+        "scope": "global",
+        "$longname": "cls",
+        "$kind": "property",
+        "id": 2136,
+        "neoClassName": "CovidHelix.view.CountryHelix"
+    },
+    {
+        "comment": "/**\n         * @member {Object} itemTpl_\n         */",
+        "meta": {
+            "filename": "CountryHelix.mjs",
+            "lineno": 32,
+            "columnno": 8,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {}
+        },
+        "kind": "member",
+        "name": "itemTpl_",
+        "type": {
+            "names": [
+                "Object"
+            ]
+        },
+        "longname": "itemTpl_",
+        "scope": "global",
+        "$longname": "itemTpl_",
+        "$kind": "property",
+        "id": 2137,
+        "neoClassName": "CovidHelix.view.CountryHelix"
+    },
+    {
+        "comment": "/**\n         * The unique record field containing the id.\n         * @member {String} keyProperty='id'\n         */",
+        "meta": {
+            "filename": "CountryHelix.mjs",
+            "lineno": 91,
+            "columnno": 8,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {}
+        },
+        "description": "The unique record field containing the id.",
+        "kind": "member",
+        "name": "keyProperty",
+        "type": {
+            "names": [
+                "String"
+            ]
+        },
+        "defaultvalue": "'id'",
+        "longname": "keyProperty",
+        "scope": "global",
+        "$longname": "keyProperty",
+        "$kind": "property",
+        "id": 2138,
+        "neoClassName": "CovidHelix.view.CountryHelix"
+    },
+    {
+        "comment": "/**\n         * The radius of the Helix in px\n         * @member {Number} radius=2500\n         */",
+        "meta": {
+            "filename": "CountryHelix.mjs",
+            "lineno": 96,
+            "columnno": 8,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {}
+        },
+        "description": "The radius of the Helix in px",
+        "kind": "member",
+        "name": "radius",
+        "type": {
+            "names": [
+                "Number"
+            ]
+        },
+        "defaultvalue": 2500,
+        "longname": "radius",
+        "scope": "global",
+        "$longname": "radius",
+        "$kind": "property",
+        "id": 2139,
+        "neoClassName": "CovidHelix.view.CountryHelix"
+    },
+    {
+        "comment": "/**\n         * True displays the first & last name record fields below an expanded item\n         * @member {Boolean} showCloneInfo=false\n         */",
+        "meta": {
+            "filename": "CountryHelix.mjs",
+            "lineno": 101,
+            "columnno": 8,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {}
+        },
+        "description": "True displays the first & last name record fields below an expanded item",
+        "kind": "member",
+        "name": "showCloneInfo",
+        "type": {
+            "names": [
+                "Boolean"
+            ]
+        },
+        "defaultvalue": false,
+        "longname": "showCloneInfo",
+        "scope": "global",
+        "$longname": "showCloneInfo",
+        "$kind": "property",
+        "id": 2140,
+        "neoClassName": "CovidHelix.view.CountryHelix"
+    },
+    {
+        "comment": "/**\n         * @member {Neo.data.Store} store=CountryStore\n         */",
+        "meta": {
+            "filename": "CountryHelix.mjs",
+            "lineno": 105,
+            "columnno": 8,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {}
+        },
+        "kind": "member",
+        "name": "store",
+        "type": {
+            "names": [
+                "Neo.data.Store"
+            ]
+        },
+        "defaultvalue": "CountryStore",
+        "longname": "store",
+        "scope": "global",
+        "$longname": "store",
+        "$kind": "property",
+        "id": 2141,
+        "neoClassName": "CovidHelix.view.CountryHelix"
+    },
+    {
+        "comment": "/**\n     *\n     * @param {Object} vdomItem\n     * @param {Object} record\n     * @param {Number} index\n     * @returns {Object} vdomItem\n     */",
+        "meta": {
+            "range": [
+                3933,
+                4623
+            ],
+            "filename": "CountryHelix.mjs",
+            "lineno": 115,
+            "columnno": 4,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {
+                "id": "astnode100070288",
+                "name": "CountryHelix#createItem",
+                "type": "MethodDefinition",
+                "paramnames": [
+                    "vdomItem",
+                    "record",
+                    "index"
+                ]
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "name": "vdomItem"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "name": "record"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Number"
+                    ]
+                },
+                "name": "index"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "description": "vdomItem"
+            }
+        ],
+        "name": "createItem",
+        "longname": "CountryHelix#createItem",
+        "kind": "function",
+        "memberof": "CountryHelix",
+        "scope": "instance",
+        "$longname": "CountryHelix#createItem",
+        "$kind": "method",
+        "id": 2142,
+        "neoClassName": "CovidHelix.view.CountryHelix"
+    },
+    {
+        "comment": "/**\n     *\n     * @param {String} name\n     * @return {String} url\n     */",
+        "meta": {
+            "range": [
+                4708,
+                7140
+            ],
+            "filename": "CountryHelix.mjs",
+            "lineno": 141,
+            "columnno": 4,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {
+                "id": "astnode100070465",
+                "name": "CountryHelix#getCountryFlagUrl",
+                "type": "MethodDefinition",
+                "paramnames": [
+                    "name"
+                ]
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "name": "name"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "description": "url"
+            }
+        ],
+        "name": "getCountryFlagUrl",
+        "longname": "CountryHelix#getCountryFlagUrl",
+        "kind": "function",
+        "memberof": "CountryHelix",
+        "scope": "instance",
+        "$longname": "CountryHelix#getCountryFlagUrl",
+        "$kind": "method",
+        "id": 2143,
+        "neoClassName": "CovidHelix.view.CountryHelix"
+    },
+    {
+        "comment": "/**\n     *\n     * @param {String} vnodeId\n     * @returns {String}\n     */",
+        "meta": {
+            "range": [
+                7225,
+                7290
+            ],
+            "filename": "CountryHelix.mjs",
+            "lineno": 220,
+            "columnno": 4,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {
+                "id": "astnode100070643",
+                "name": "CountryHelix#getItemId",
+                "type": "MethodDefinition",
+                "paramnames": [
+                    "vnodeId"
+                ]
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "name": "vnodeId"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                }
+            }
+        ],
+        "name": "getItemId",
+        "longname": "CountryHelix#getItemId",
+        "kind": "function",
+        "memberof": "CountryHelix",
+        "scope": "instance",
+        "$longname": "CountryHelix#getItemId",
+        "$kind": "method",
+        "id": 2144,
+        "neoClassName": "CovidHelix.view.CountryHelix"
+    },
+    {
         "comment": "/**\n * @class CovidHelix.view.MainContainer\n * @extends Neo.container.Viewport\n */",
         "meta": {
             "filename": "MainContainer.mjs",
-            "lineno": 5,
+            "lineno": 6,
             "columnno": 0,
             "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
             "code": {}
@@ -78297,7 +78737,165 @@
         "scope": "static",
         "$longname": "CovidHelix.view.MainContainer",
         "$kind": "class",
-        "id": 2131,
+        "id": 2145,
+        "neoClassName": "CovidHelix.view.MainContainer"
+    },
+    {
+        "comment": "/**\n         * @member {String[]} cls=['neo-helix-maincontainer', 'neo-viewport']\n         */",
+        "meta": {
+            "filename": "MainContainer.mjs",
+            "lineno": 19,
+            "columnno": 8,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {}
+        },
+        "kind": "member",
+        "name": "cls",
+        "type": {
+            "names": [
+                "Array.<String>"
+            ]
+        },
+        "defaultvalue": "['neo-helix-maincontainer', 'neo-viewport']",
+        "description": "'neo-viewport']",
+        "longname": "cls",
+        "scope": "global",
+        "$longname": "cls",
+        "$kind": "property",
+        "id": 2146,
+        "neoClassName": "CovidHelix.view.MainContainer"
+    },
+    {
+        "comment": "/**\n         * @member {Neo.component.Helix|null} helix=null\n         */",
+        "meta": {
+            "filename": "MainContainer.mjs",
+            "lineno": 23,
+            "columnno": 8,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {}
+        },
+        "kind": "member",
+        "name": "helix",
+        "type": {
+            "names": [
+                "Neo.component.Helix",
+                "null"
+            ]
+        },
+        "defaultvalue": null,
+        "longname": "helix",
+        "scope": "global",
+        "$longname": "helix",
+        "$kind": "property",
+        "id": 2147,
+        "neoClassName": "CovidHelix.view.MainContainer"
+    },
+    {
+        "comment": "/**\n         * @member {Object|null} helixConfig=null\n         */",
+        "meta": {
+            "filename": "MainContainer.mjs",
+            "lineno": 27,
+            "columnno": 8,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {}
+        },
+        "kind": "member",
+        "name": "helixConfig",
+        "type": {
+            "names": [
+                "Object",
+                "null"
+            ]
+        },
+        "defaultvalue": null,
+        "longname": "helixConfig",
+        "scope": "global",
+        "$longname": "helixConfig",
+        "$kind": "property",
+        "id": 2148,
+        "neoClassName": "CovidHelix.view.MainContainer"
+    },
+    {
+        "comment": "/**\n     *\n     * @param {Object} config\n     */",
+        "meta": {
+            "range": [
+                13086,
+                13686
+            ],
+            "filename": "MainContainer.mjs",
+            "lineno": 346,
+            "columnno": 4,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {
+                "id": "astnode100071530",
+                "name": "MainContainer",
+                "type": "MethodDefinition",
+                "paramnames": [
+                    "config"
+                ]
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "name": "config"
+            }
+        ],
+        "name": "MainContainer",
+        "longname": "MainContainer",
+        "kind": "class",
+        "scope": "global",
+        "$longname": "MainContainer",
+        "$kind": "constructor",
+        "id": 2149,
+        "neoClassName": "CovidHelix.view.MainContainer"
+    },
+    {
+        "comment": "/**\n     *\n     * @returns {Neo.data.Store}\n     */",
+        "meta": {
+            "range": [
+                13818,
+                13881
+            ],
+            "filename": "MainContainer.mjs",
+            "lineno": 375,
+            "columnno": 4,
+            "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
+            "code": {
+                "id": "astnode100071635",
+                "name": "MainContainer#getStore",
+                "type": "MethodDefinition",
+                "paramnames": []
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Neo.data.Store"
+                    ]
+                }
+            }
+        ],
+        "name": "getStore",
+        "longname": "MainContainer#getStore",
+        "kind": "function",
+        "memberof": "MainContainer",
+        "scope": "instance",
+        "params": [],
+        "$longname": "MainContainer#getStore",
+        "$kind": "method",
+        "id": 2150,
         "neoClassName": "CovidHelix.view.MainContainer"
     }
 ]

@@ -232,6 +232,17 @@
     {
         "className": null,
         "collapsed": false,
+        "id": 183,
+        "isLeaf": false,
+        "name": "model",
+        "path": "",
+        "parentId": 182,
+        "singleton": false,
+        "srcPath": null
+    },
+    {
+        "className": null,
+        "collapsed": false,
         "id": 111,
         "isLeaf": false,
         "name": "selection",
@@ -248,6 +259,17 @@
         "path": "",
         "parentId": null,
         "singleton": false
+    },
+    {
+        "className": null,
+        "collapsed": false,
+        "id": 185,
+        "isLeaf": false,
+        "name": "store",
+        "path": "",
+        "parentId": 182,
+        "singleton": false,
+        "srcPath": null
     },
     {
         "className": null,
@@ -340,7 +362,7 @@
     {
         "className": null,
         "collapsed": false,
-        "id": 183,
+        "id": 187,
         "isLeaf": false,
         "name": "view",
         "path": "",
@@ -809,6 +831,39 @@
         "parentId": 63,
         "singleton": false,
         "srcPath": "node_modules/neo.mjs/src/form/field/trigger/CopyToClipboard.mjs"
+    },
+    {
+        "className": "CovidHelix.store.Countries",
+        "collapsed": false,
+        "id": 186,
+        "isLeaf": true,
+        "name": "Countries",
+        "path": ".store",
+        "parentId": 185,
+        "singleton": false,
+        "srcPath": "/Shared/github/covid-helix/apps/covidhelix/store/Countries.mjs"
+    },
+    {
+        "className": "CovidHelix.model.Country",
+        "collapsed": false,
+        "id": 184,
+        "isLeaf": true,
+        "name": "Country",
+        "path": ".model",
+        "parentId": 183,
+        "singleton": false,
+        "srcPath": "/Shared/github/covid-helix/apps/covidhelix/model/Country.mjs"
+    },
+    {
+        "className": "CovidHelix.view.CountryHelix",
+        "collapsed": false,
+        "id": 188,
+        "isLeaf": true,
+        "name": "CountryHelix",
+        "path": ".view",
+        "parentId": 187,
+        "singleton": false,
+        "srcPath": "/Shared/github/covid-helix/apps/covidhelix/view/CountryHelix.mjs"
     },
     {
         "className": null,
@@ -1363,11 +1418,11 @@
     {
         "className": "CovidHelix.view.MainContainer",
         "collapsed": false,
-        "id": 184,
+        "id": 189,
         "isLeaf": true,
         "name": "MainContainer",
         "path": ".view",
-        "parentId": 183,
+        "parentId": 187,
         "singleton": false,
         "srcPath": "/Shared/github/covid-helix/apps/covidhelix/view/MainContainer.mjs"
     },
