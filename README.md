@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://npmcharts.com/compare/covid19-gallery?minimal=true"><img src="https://img.shields.io/npm/dm/covid19-gallery.svg" alt="Downloads"></a>
-  <a href="https://www.npmjs.com/package/covid19-gallery"><img src="https://img.shields.io/npm/v/covid19-gallery.svg" alt="Version"></a>
-  <a href="https://www.npmjs.com/package/covid19-gallery"><img src="https://img.shields.io/npm/l/covid19-gallery.svg" alt="License"></a>
+  <a href="https://npmcharts.com/compare/covid19-helix?minimal=true"><img src="https://img.shields.io/npm/dm/covid19-helix.svg" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/covid19-helix"><img src="https://img.shields.io/npm/v/covid19-helix.svg" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/covid19-helix"><img src="https://img.shields.io/npm/l/covid19-helix.svg" alt="License"></a>
   <a href="https://discord.gg/6p8paPq"><img src="https://img.shields.io/discord/656620537514164249?label=discord%20chat" alt="Chat"></a>
   <a href="./CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-green.svg" alt="PRs Welcome"></a>
 </p>
 
-# neo.mjs covid19
+# neo.mjs covid-helix
 A multi-threaded Gallery showing countries affected by COVID 19.
 
 You can configure and sort the gallery with the controls on the right side, resulting in a firework of CSS3 transitions.
