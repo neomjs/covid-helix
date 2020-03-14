@@ -1,7 +1,7 @@
 {
-    "name": "covidhelix",
-    "version": "0.1.0",
-    "private": true,
+    "name": "covid19-helix",
+    "version": "1.0.0",
+    "description": "3d Helix App displaying numbers by country about COVID-19",
     "scripts": {
         "server-start": "webpack-dev-server --open",
         "build-all": "node ./node_modules/neo.mjs/buildScripts/buildAll.js",
@@ -25,5 +25,9 @@
     "dependencies": {
         "neo.mjs": "^1.0.41",
         "sass": "^1.24.0"
+    },
+    "funding": {
+        "type": "GitHub Sponsors",
+        "url": "https://github.com/sponsors/tobiu"
     }
 }
