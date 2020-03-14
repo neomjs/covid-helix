@@ -7,9 +7,9 @@
 </p>
 
 # neo.mjs covid-helix
-A multi-threaded Gallery showing countries affected by COVID 19.
+A multi-threaded Helix showing countries affected by COVID 19.
 
-You can configure and sort the gallery with the controls on the right side, resulting in a firework of CSS3 transitions.
+You can configure and sort the helix with the controls on the right side, resulting in a firework of CSS3 transitions.
 
 This is a perfect performance demo for the webworkers driven UI framework <a href="https://github.com/neomjs/neo">neo.mjs</a>.
 
@@ -19,7 +19,8 @@ This is a perfect performance demo for the webworkers driven UI framework <a hre
 3. <a href="#getting-started">Getting Started</a>
 4. <a href="#docs-app">Docs App</a>
 5. <a href="#multithreading">Multithreading</a>
-6. <a href="#attribution">Attribution</a>
+6. <a href="#navigation-concept">Navigation Concept</a>
+7. <a href="#attribution">Attribution</a>
 
 ## Online Versions
 You can find the Online Versions <a href="https://neomjs.github.io/pages/">here on GitHub Pages</a> (COVID-19 Gallery).
@@ -62,6 +63,11 @@ In case you want to take a closer look at the workers setup, take a look into th
 <img src="https://raw.githubusercontent.com/neomjs/pages/master/resources/images/covid_workers.png">
 
 Your app code will get loaded into the App thread.
+
+## Navigation Concept
+1. Click on an item to select it. Afterwards you can use the Arrow Keys to walk through the items.
+2. Hit the Space Key to rotate the currently selected item to the front.
+3. Hit the Enter Key to expand the currently selected item.
 
 ## Attribution
 1. This App is created using the <a href="https://github.com/neomjs/neo">neo.mjs</a> UI framework.
