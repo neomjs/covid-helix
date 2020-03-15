@@ -23,7 +23,7 @@ This is a perfect performance demo for the webworkers driven UI framework <a hre
 7. <a href="#attribution">Attribution</a>
 
 ## Online Versions
-You can find the Online Versions <a href="https://neomjs.github.io/pages/">here on GitHub Pages</a> (COVID-19 Gallery).
+You can find the Online Versions <a href="https://neomjs.github.io/pages/">here on GitHub Pages</a> (COVID-19 Helix).
 
 ## Preview Image
 <img src="https://raw.githubusercontent.com/neomjs/pages/master/resources/images/covid_gallery.png">
@@ -31,12 +31,12 @@ You can find the Online Versions <a href="https://neomjs.github.io/pages/">here 
 ## Getting Started
 1. Clone this repo to your system to get the project files
    ```sh
-   git clone https://github.com/neomjs/covid19.git
+   git clone https://github.com/neomjs/covid-helix.git
    ```
 
 2. Open the checked out top level folder inside your terminal
    ```sh
-   cd covid19
+   cd covid-helix
    ```
 
 3. Install the required node modules & run all relevant build scripts at once
@@ -53,7 +53,7 @@ Since this app shell was created using:
 > npx neo-app
 
 we do get documentation views for our app source code out of the box:
-> localhost/covid19/docs/index.html
+> localhost/covid-helix/docs/index.html
 
 <img src="https://raw.githubusercontent.com/neomjs/pages/master/resources/images/covid_docs.png">
    
@@ -68,6 +68,9 @@ Your app code will get loaded into the App thread.
 1. Click on an item to select it. Afterwards you can use the Arrow Keys to walk through the items.
 2. Hit the Space Key to rotate the currently selected item to the front.
 3. Hit the Enter Key to expand the currently selected item.
+4. Use the mouse wheel vertically to zoom.
+5. Use the mouse wheel horizontally to rotate (e.g. trackpad / magic mouse).
+6. Care for adding mobile support? Please add your feedback <a href="https://github.com/neomjs/neo/issues/280">here</a>.
 
 ## Attribution
 1. This App is created using the <a href="https://github.com/neomjs/neo">neo.mjs</a> UI framework.
