@@ -55,12 +55,12 @@ Since this app shell was created using:
 we do get documentation views for our app source code out of the box:
 > localhost/covid-helix/docs/index.html
 
-<img src="https://raw.githubusercontent.com/neomjs/pages/master/resources/images/covid_docs.png">
+<img src="https://raw.githubusercontent.com/neomjs/pages/master/resources/images/covid/helix-docs.png">
    
 ## Multithreading
 In case you want to take a closer look at the workers setup, take a look into the Chrome dev tools Sources:
 
-<img src="https://raw.githubusercontent.com/neomjs/pages/master/resources/images/covid_workers.png">
+<img src="https://raw.githubusercontent.com/neomjs/pages/master/resources/images/covid/helix-workers.png">
 
 Your app code will get loaded into the App thread.
 
