@@ -78618,7 +78618,7 @@
         "meta": {
             "range": [
                 4708,
-                7140
+                7234
             ],
             "filename": "CountryHelix.mjs",
             "lineno": 141,
@@ -78670,15 +78670,15 @@
         "comment": "/**\n     *\n     * @param {String} vnodeId\n     * @returns {String}\n     */",
         "meta": {
             "range": [
-                7225,
-                7290
+                7319,
+                7384
             ],
             "filename": "CountryHelix.mjs",
-            "lineno": 220,
+            "lineno": 223,
             "columnno": 4,
             "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
             "code": {
-                "id": "astnode100070643",
+                "id": "astnode100070650",
                 "name": "CountryHelix#getItemId",
                 "type": "MethodDefinition",
                 "paramnames": [
@@ -78827,7 +78827,7 @@
             "columnno": 4,
             "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
             "code": {
-                "id": "astnode100071530",
+                "id": "astnode100071537",
                 "name": "MainContainer",
                 "type": "MethodDefinition",
                 "paramnames": [
@@ -78869,7 +78869,7 @@
             "columnno": 4,
             "path": "/Users/Shared/github/covid-helix/apps/covidhelix/view",
             "code": {
-                "id": "astnode100071635",
+                "id": "astnode100071642",
                 "name": "MainContainer#getStore",
                 "type": "MethodDefinition",
                 "paramnames": []
