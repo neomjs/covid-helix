@@ -1,6 +1,6 @@
 {
     "name": "covid19-helix",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "3d Helix App displaying numbers by country about COVID-19",
     "scripts": {
         "server-start": "webpack-dev-server --open",
