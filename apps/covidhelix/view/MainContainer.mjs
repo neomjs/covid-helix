@@ -346,9 +346,8 @@ class MainContainer extends Viewport {
     constructor(config) {
         super(config);
 
-        const me       = this,
-              proxyUrl = "https://cors-anywhere.herokuapp.com/",
-              url      = 'https://corona.lmao.ninja/countries';
+        const me  = this,
+              url = 'https://corona.lmao.ninja/countries';
 
         me.helix = Neo.create({
             module: CountryHelix,
@@ -358,7 +357,7 @@ class MainContainer extends Viewport {
 
         me.items[0].items.push(me.helix);
 
-        fetch(proxyUrl + url)
+        fetch(url)
             .then(response => response.json())
             .then(data => me.addStoreItems(data))
             .catch(err => console.log('Can’t access ' + url, err));
