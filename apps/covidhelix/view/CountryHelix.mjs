@@ -18,14 +18,19 @@ class CountryHelix extends Helix {
 
     static getConfig() {return {
         /**
-         * @member {String} className='CovidHelix.view.CountryHelix'
+         * @member {String} className='Covid.view.country.Helix'
          * @private
          */
-        className: 'CovidHelix.view.CountryHelix',
+        className: 'Covid.view.country.Helix',
         /**
-         * @member {String[]} cls=['neo-country-helix', 'neo-helix']
+         * @member {String[]} cls=['covid-country-helix', 'neo-helix']
          */
-        cls: ['neo-country-helix', 'neo-helix'],
+        cls: ['covid-country-helix', 'neo-helix'],
+        /**
+         * The vertical delta between each helix item (increasing this value will create a spiral)
+         * @member {Number} deltaY=1.2
+         */
+        deltaY: 1.2,
         /**
          * @member {Object} itemTpl_
          */
@@ -95,6 +100,11 @@ class CountryHelix extends Helix {
          */
         radius: 2500,
         /**
+         * The rotationAngle of the Helix in degrees
+         * @member {Number} rotationAngle=720
+         */
+        rotationAngle: 720,
+        /**
          * True displays the first & last name record fields below an expanded item
          * @member {Boolean} showCloneInfo=false
          */
@@ -102,7 +112,17 @@ class CountryHelix extends Helix {
         /**
          * @member {Neo.data.Store} store=CountryStore
          */
-        store: CountryStore
+        store: CountryStore,
+        /**
+         * The translateX value gets included into each helix item
+         * @member {Number} translateY=500
+         */
+        translateY: 500,
+        /**
+         * The translateX value gets included into each helix item
+         * @member {Number} translateZ_=-2300
+         */
+        translateZ: -2300
     }}
 
     /**
@@ -139,89 +159,55 @@ class CountryHelix extends Helix {
      * @return {String} url
      */
     getCountryFlagUrl(name) {
-        let imageName = name.toLowerCase();
+        const map = {
+            'cabo-verde'            : 'cape-verde',
+            'car'                   : 'central-african-republic',
+            'channel-islands'       : 'jersey',
+            'congo'                 : 'democratic-republic-of-congo',
+            'curaçao'               : 'curacao',
+            'czechia'               : 'czech-republic',
+            'diamond-princess'      : 'japan', // cruise ship?
+            'drc'                   : 'democratic-republic-of-congo',
+            'el-salvador'           : 'salvador',
+            'eswatini'              : 'swaziland',
+            'faeroe-islands'        : 'faroe-islands',
+            'french-guiana'         : 'france', // ?
+            'guadeloupe'            : 'france', // ?
+            'mayotte'               : 'france', // ?
+            'new-caledonia'         : 'france',
+            'north-macedonia'       : 'republic-of-macedonia',
+            'poland'                : 'republic-of-poland',
+            'réunion'               : 'france',
+            'saint-lucia'           : 'st-lucia',
+            's.-korea'              : 'south-korea',
+            'st.-barth'             : 'st-barts',
+            'saint-martin'          : 'sint-maarten',
+            'st.-vincent-grenadines': 'st-vincent-and-the-grenadines',
+            'timor-leste'           : 'east-timor',
+            'u.s.-virgin-islands'   : 'virgin-islands',
+            'uae'                   : 'united-arab-emirates',
+            'uk'                    : 'united-kingdom',
+            'usa'                   : 'united-states-of-america',
+            'uzbekistan'            : 'uzbekistn'
+        };
 
-        imageName = imageName.replace(CountryHelix.flagRegEx, '-');
+        let imageName = name.toLowerCase().replace(CountryHelix.flagRegEx, '-');
 
-        switch(imageName) {
-            case 'car':
-                imageName = 'central-african-republic';
-                break;
-            case 'channel-islands':
-                imageName = 'jersey';
-                break;
-            case 'congo':
-                imageName = 'democratic-republic-of-congo';
-                break;
-            case 'curaçao':
-                imageName = 'curacao';
-                break;
-            case 'czechia':
-                imageName = 'czech-republic';
-                break;
-            case 'diamond-princess':
-                imageName = 'japan'; // cruise ship?
-                break;
-            case 'drc':
-                imageName = 'democratic-republic-of-congo';
-                break;
-            case 'eswatini':
-                imageName = 'swaziland';
-                break;
-            case 'faeroe-islands':
-                imageName = 'faroe-islands';
-                break;
-            case 'french-guiana':
-                imageName = 'france'; // ?
-                break;
-            case 'guadeloupe':
-                imageName = 'france'; // ?
-                break;
-            case 'mayotte':
-                imageName = 'france'; // ?
-                break;
-            case 'north-macedonia':
-                imageName = 'republic-of-macedonia';
-                break;
-            case 'poland':
-                imageName = 'republic-of-poland';
-                break;
-            case 'réunion':
-                imageName = 'france';
-                break;
-            case 'saint-lucia':
-                imageName = 'st-lucia';
-                break;
-            case 's.-korea':
-                imageName = 'south-korea';
-                break;
-            case 'st.-barth':
-                imageName = 'st-barts';
-                break;
-            case 'saint-martin':
-                imageName = 'sint-maarten';
-                break;
-            case 'st.-vincent-grenadines':
-                imageName = 'st-vincent-and-the-grenadines';
-                break;
-            case 'u.s.-virgin-islands':
-                imageName = 'virgin-islands';
-                break;
-            case 'uae':
-                imageName = 'united-arab-emirates';
-                break;
-            case 'uk':
-                imageName = 'united-kingdom';
-                break;
-            case 'usa':
-                imageName = 'united-states-of-america';
-                break;
-            case 'uzbekistan':
-                imageName = 'uzbekistn';
-                break;
-        }
+        imageName = map[imageName] || imageName;
 
         return 'https://raw.githubusercontent.com/neomjs/pages/master/resources/images/flaticon/country_flags/png/' + imageName + '.png'
+    }
+    /**
+     *
+     * @returns {String}
+     */
+    getCloneTransform() {
+        let me         = this,
+            translateX = (me.offsetWidth  - 2800) / 6,
+            translateY = (me.offsetHeight - 2700) / 6,
+            translateZ = 100400 + me.perspective / 1.5;
+
+        return 'matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,'+translateX+','+translateY+','+translateZ+',1)';
     }
 
     /**
