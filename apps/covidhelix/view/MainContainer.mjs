@@ -347,7 +347,7 @@ class MainContainer extends Viewport {
         super(config);
 
         const me  = this,
-              url = 'https://corona.lmao.ninja/countries';
+              url = 'https://corona.lmao.ninja/v2/countries';
 
         me.helix = Neo.create({
             module: CountryHelix,
