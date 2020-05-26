@@ -14,8 +14,8 @@
     },
     "apps": {
         "Docs": {
-            "indexPath": "node_modules/neo.mjs/docs/index.ejs",
             "input": "buildScripts/entrypoints/Docs.mjs",
+            "mainThreadAddons": "'GoogleAnalytics', 'HighlightJS', 'Stylesheet'",
             "output": "/docs/",
             "title": "Neo Docs"
         },
