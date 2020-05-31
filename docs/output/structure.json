@@ -445,7 +445,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "docs/app/view/ApiTreeList.mjs"
+        "srcPath": "covid-helix/docs/app/view/ApiTreeList.mjs"
     },
     {
         "className": "Neo.worker.App",
@@ -896,7 +896,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "docs/app/view/ContentTabContainer.mjs"
+        "srcPath": "covid-helix/docs/app/view/ContentTabContainer.mjs"
     },
     {
         "className": "Neo.form.field.trigger.CopyToClipboard",
@@ -918,7 +918,7 @@
         "path": ".store",
         "parentId": 194,
         "singleton": false,
-        "srcPath": "apps/covidhelix/store/Countries.mjs"
+        "srcPath": "covid-helix/apps/covidhelix/store/Countries.mjs"
     },
     {
         "className": "CovidHelix.model.Country",
@@ -929,7 +929,7 @@
         "path": ".model",
         "parentId": 192,
         "singleton": false,
-        "srcPath": "apps/covidhelix/model/Country.mjs"
+        "srcPath": "covid-helix/apps/covidhelix/model/Country.mjs"
     },
     {
         "className": "CovidHelix.view.CountryHelix",
@@ -940,7 +940,7 @@
         "path": ".view",
         "parentId": 196,
         "singleton": false,
-        "srcPath": "apps/covidhelix/view/CountryHelix.mjs"
+        "srcPath": "covid-helix/apps/covidhelix/view/CountryHelix.mjs"
     },
     {
         "className": null,
@@ -1116,7 +1116,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "docs/app/view/ExamplesTreeList.mjs"
+        "srcPath": "covid-helix/docs/app/view/ExamplesTreeList.mjs"
     },
     {
         "className": "Neo.data.field.Field",
@@ -1281,7 +1281,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "docs/app/view/classdetails/HeaderComponent.mjs"
+        "srcPath": "covid-helix/docs/app/view/classdetails/HeaderComponent.mjs"
     },
     {
         "className": "Docs.app.view.HeaderContainer",
@@ -1292,7 +1292,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "docs/app/view/HeaderContainer.mjs"
+        "srcPath": "covid-helix/docs/app/view/HeaderContainer.mjs"
     },
     {
         "className": "Neo.component.Helix",
@@ -1336,7 +1336,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "docs/app/view/classdetails/HierarchyTreeList.mjs"
+        "srcPath": "covid-helix/docs/app/view/classdetails/HierarchyTreeList.mjs"
     },
     {
         "className": "Neo.main.addon.HighlightJS",
@@ -1457,7 +1457,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "docs/app/view/classdetails/MainContainer.mjs"
+        "srcPath": "covid-helix/docs/app/view/classdetails/MainContainer.mjs"
     },
     {
         "className": "Docs.app.view.MainContainer",
@@ -1468,7 +1468,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "docs/app/view/MainContainer.mjs"
+        "srcPath": "covid-helix/docs/app/view/MainContainer.mjs"
     },
     {
         "className": "CovidHelix.view.MainContainer",
@@ -1479,7 +1479,7 @@
         "path": ".view",
         "parentId": 196,
         "singleton": false,
-        "srcPath": "apps/covidhelix/view/MainContainer.mjs"
+        "srcPath": "covid-helix/apps/covidhelix/view/MainContainer.mjs"
     },
     {
         "className": "Docs.app.view.classdetails.MainContainerController",
@@ -1490,7 +1490,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "docs/app/view/classdetails/MainContainerController.mjs"
+        "srcPath": "covid-helix/docs/app/view/classdetails/MainContainerController.mjs"
     },
     {
         "className": "Docs.app.view.MainContainerController",
@@ -1501,7 +1501,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "docs/app/view/MainContainerController.mjs"
+        "srcPath": "covid-helix/docs/app/view/MainContainerController.mjs"
     },
     {
         "className": "Neo.worker.Manager",
@@ -1567,7 +1567,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "docs/app/view/classdetails/MembersList.mjs"
+        "srcPath": "covid-helix/docs/app/view/classdetails/MembersList.mjs"
     },
     {
         "className": "Neo.worker.Message",
@@ -1809,7 +1809,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "docs/app/view/classdetails/SourceViewComponent.mjs"
+        "srcPath": "covid-helix/docs/app/view/classdetails/SourceViewComponent.mjs"
     },
     {
         "className": "Neo.form.field.trigger.SpinDown",
@@ -2029,7 +2029,7 @@
         "path": "view.classdetails",
         "parentId": 177,
         "singleton": false,
-        "srcPath": "docs/app/view/classdetails/TutorialComponent.mjs"
+        "srcPath": "covid-helix/docs/app/view/classdetails/TutorialComponent.mjs"
     },
     {
         "className": "Docs.app.view.TutorialsTreeList",
@@ -2040,7 +2040,7 @@
         "path": "view",
         "parentId": 175,
         "singleton": false,
-        "srcPath": "docs/app/view/TutorialsTreeList.mjs"
+        "srcPath": "covid-helix/docs/app/view/TutorialsTreeList.mjs"
     },
     {
         "className": "Neo.core.Util",
