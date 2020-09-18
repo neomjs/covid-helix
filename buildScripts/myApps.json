@@ -14,13 +14,13 @@
     },
     "apps": {
         "Docs": {
-            "input": "buildScripts/entrypoints/Docs.mjs",
+            "input": "./docs/app.mjs",
             "mainThreadAddons": "'HighlightJS', 'Stylesheet'",
             "output": "/docs/",
             "title": "Neo Docs"
         },
         "CovidHelix": {
-            "input": "buildScripts/entrypoints/CovidHelix.mjs",
+            "input": "./apps/covidhelix/app.mjs",
             "output": "/apps/covidhelix/",
             "themes": "'neo-theme-dark'",
             "title": "CovidHelix"
