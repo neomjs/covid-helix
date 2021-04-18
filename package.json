@@ -1,6 +1,6 @@
 {
     "name": "covid19-helix",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "description": "3d Helix App displaying numbers by country about COVID-19",
     "repository": {
         "type": "git",
