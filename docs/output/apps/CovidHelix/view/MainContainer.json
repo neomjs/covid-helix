@@ -19,7 +19,7 @@
             "scope": "static",
             "$longname": "CovidHelix.view.MainContainer",
             "$kind": "class",
-            "id": 3215,
+            "id": 3212,
             "neoClassName": "CovidHelix.view.MainContainer"
         },
         {
@@ -44,7 +44,7 @@
             "scope": "global",
             "$longname": "cls",
             "$kind": "property",
-            "id": 3216,
+            "id": 3213,
             "neoClassName": "CovidHelix.view.MainContainer"
         },
         {
@@ -69,7 +69,7 @@
             "scope": "global",
             "$longname": "helix",
             "$kind": "property",
-            "id": 3217,
+            "id": 3214,
             "neoClassName": "CovidHelix.view.MainContainer"
         },
         {
@@ -94,7 +94,7 @@
             "scope": "global",
             "$longname": "helixConfig",
             "$kind": "property",
-            "id": 3218,
+            "id": 3215,
             "neoClassName": "CovidHelix.view.MainContainer"
         },
         {
@@ -109,7 +109,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/covid-helix/apps/covidhelix/view",
                 "code": {
-                    "id": "astnode100106302",
+                    "id": "astnode100106151",
                     "name": "MainContainer",
                     "type": "MethodDefinition",
                     "paramnames": [
@@ -136,7 +136,7 @@
             "scope": "global",
             "$longname": "MainContainer",
             "$kind": "constructor",
-            "id": 3219,
+            "id": 3216,
             "neoClassName": "CovidHelix.view.MainContainer"
         },
         {
@@ -151,7 +151,7 @@
                 "columnno": 4,
                 "path": "/Users/Shared/github/neomjs/covid-helix/apps/covidhelix/view",
                 "code": {
-                    "id": "astnode100106402",
+                    "id": "astnode100106251",
                     "name": "MainContainer#getStore",
                     "type": "MethodDefinition",
                     "paramnames": []
@@ -177,7 +177,7 @@
             "params": [],
             "$longname": "MainContainer#getStore",
             "$kind": "method",
-            "id": 3220,
+            "id": 3217,
             "neoClassName": "CovidHelix.view.MainContainer"
         }
     ]

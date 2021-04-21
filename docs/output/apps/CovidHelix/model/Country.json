@@ -19,7 +19,7 @@
             "scope": "static",
             "$longname": "CovidHelix.model.Country",
             "$kind": "class",
-            "id": 3196,
+            "id": 3193,
             "neoClassName": "CovidHelix.model.Country"
         }
     ]
