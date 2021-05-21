@@ -1,4 +1,4 @@
-import CountryHelix            from './CountryHelix.mjs';
+import CountryHelix            from './country/Helix.mjs';
 import {default as Panel}      from '../../../node_modules/neo.mjs/src/container/Panel.mjs';
 import {default as RangeField} from '../../../node_modules/neo.mjs/src/form/field/Range.mjs';
 import Viewport                from '../../../node_modules/neo.mjs/src/container/Viewport.mjs';

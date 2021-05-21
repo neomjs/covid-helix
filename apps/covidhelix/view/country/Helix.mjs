@@ -1,11 +1,11 @@
-import CountryStore from '../store/Countries.mjs';
-import Helix        from '../../../node_modules/neo.mjs/src/component/Helix.mjs';
+import CountryStore from '../../store/Countries.mjs';
+import BaseHelix    from '../../../../node_modules/neo.mjs/src/component/Helix.mjs';
 
 /**
- * @class CovidHelix.view.CountryHelix
+ * @class CovidHelix.view.country.Helix
  * @extends Neo.component.Helix
  */
-class CountryHelix extends Helix {
+class Helix extends BaseHelix {
     static getStaticConfig() {return {
         /**
          * A regex to replace blank chars
@@ -18,10 +18,10 @@ class CountryHelix extends Helix {
 
     static getConfig() {return {
         /**
-         * @member {String} className='Covid.view.country.Helix'
+         * @member {String} className='CovidHelix.view.country.Helix'
          * @private
          */
-        className: 'Covid.view.country.Helix',
+        className: 'CovidHelix.view.country.Helix',
         /**
          * @member {String[]} cls=['covid-country-helix', 'neo-helix']
          */
@@ -193,6 +193,7 @@ class CountryHelix extends Helix {
             'réunion'                              : 'france',
             's.-korea'                             : 'south-korea',
             'st.-barth'                            : 'st-barts',
+            'saint-helena'                         : 'united-kingdom', // sorry, icon not included
             'saint-lucia'                          : 'st-lucia',
             'saint-martin'                         : 'sint-maarten',
             'saint-pierre-miquelon'                : 'france',
@@ -211,7 +212,7 @@ class CountryHelix extends Helix {
             'wallis-and-futuna'                    : 'france'
         };
 
-        let imageName = name.toLowerCase().replace(CountryHelix.flagRegEx, '-');
+        let imageName = name.toLowerCase().replace(Helix.flagRegEx, '-');
 
         imageName = map[imageName] || imageName;
 
@@ -251,6 +252,6 @@ class CountryHelix extends Helix {
     }
 }
 
-Neo.applyClassConfig(CountryHelix);
+Neo.applyClassConfig(Helix);
 
-export {CountryHelix as default};
+export {Helix as default};
