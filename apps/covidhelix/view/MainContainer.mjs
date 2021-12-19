@@ -339,11 +339,10 @@ class MainContainer extends Viewport {
     }}
 
     /**
-     *
      * @param {Object} config
      */
-    constructor(config) {
-        super(config);
+    construct(config) {
+        super.construct(config);
 
         const me  = this,
               url = 'https://corona.lmao.ninja/v2/countries';
@@ -362,12 +361,14 @@ class MainContainer extends Viewport {
             .catch(err => console.log('Can’t access ' + url, err));
     }
 
+    /**
+     * @param {Object} data
+     */
     addStoreItems(data) {
         this.getStore().data = data;
     }
 
     /**
-     *
      * @returns {Neo.data.Store}
      */
     getStore() {
